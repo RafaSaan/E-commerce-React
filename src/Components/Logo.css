@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.logo__container {
+  width: 20%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+  color: #000;
+}
+.logo > h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .logo__container {
+    width: 40%;
+  }
+}

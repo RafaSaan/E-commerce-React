@@ -1,0 +1,19 @@
+.hero__title {
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+}
+.hero__paragraph {
+  font-size: 1.8rem;
+  color: rgb(87, 87, 87);
+  margin: 2rem auto;
+}
+
+.cta {
+  width: 15rem;
+  height: 4rem;
+  border: 0.5px solid #0046cc;
+  font-size: 1.8rem;
+  background: transparent;
+  margin-top: 1rem;
+}

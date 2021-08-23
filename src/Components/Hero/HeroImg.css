@@ -1,0 +1,5 @@
+@media screen and (max-width: 690px) {
+  .hero__img {
+    width: 22rem;
+  }
+}

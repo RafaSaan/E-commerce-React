@@ -1,0 +1,17 @@
+.nav__usuario {
+  width: 20%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.user-icon,
+.cart-icon {
+  font-size: 3.4rem;
+  color: #000;
+}
+@media screen and (max-width: 500px) {
+  .nav__usuario {
+    width: 40%;
+  }
+}
