@@ -12,8 +12,9 @@
 .cta {
   width: 15rem;
   height: 4rem;
-  border: 0.5px solid #0046cc;
+  border: 1px solid #0046cc;
   font-size: 1.8rem;
   background: transparent;
   margin-top: 1rem;
+  cursor: pointer;
 }
