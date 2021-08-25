@@ -1,15 +1,21 @@
 import React from "react";
 import "./CardProduct.css";
-import macetaMirlo from "../../Media/macetaMirlo.png";
-const CardProduct = () => {
+
+const CardProduct = ({ product, onAddToCart }) => {
   return (
     <div className="products__card">
-      <img src={macetaMirlo} alt="maceta-negra" className="products__img" />
+      <img
+        src={product.media.source}
+        alt={product.name}
+        className="products__img"
+      />
       <div className="products__info">
-        <h4>Maceta Mirlo </h4>
-        <p>500$</p>
+        <h4>{product.name}</h4>
+        <p>{product.price.formatted_with_code}</p>
       </div>
-      <button className="cta">Comprar</button>
+      <button onClick={() => onAddToCart(product.id, 1)} className="cta">
+        Comprar
+      </button>
     </div>
   );
 };

@@ -1,0 +1,28 @@
+.cart__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.cart-img {
+  width: 7rem;
+}
+.card__item__sec {
+  font-size: 1.4rem;
+}
+.item-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-cont {
+  width: 2rem;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+.cont {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}

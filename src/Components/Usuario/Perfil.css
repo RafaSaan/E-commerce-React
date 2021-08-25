@@ -7,8 +7,17 @@
   place-items: center;
 }
 .user__img {
-  width: 20rem;
-  height: 22rem;
+  width: 16rem;
+  height: 18rem;
   background: #eee;
   font-size: 2rem;
+  object-fit: cover;
+}
+.logout {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 400px) {
+  .user {
+    height: 105vh;
+  }
 }

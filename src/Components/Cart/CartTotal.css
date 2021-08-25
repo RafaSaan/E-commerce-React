@@ -1,0 +1,13 @@
+.cart__total {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.cart__sub {
+  font-size: 2rem;
+}
+.total-num {
+  margin-left: 7.5rem;
+}

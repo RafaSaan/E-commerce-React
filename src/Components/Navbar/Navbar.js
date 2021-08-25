@@ -4,12 +4,12 @@ import Logo from "./Logo";
 import NavbarMenu from "./NavbarMenu";
 import NavbarUsuario from "./NavbarUsuario";
 
-const Navbar = () => {
+const Navbar = ({ totalItems }) => {
   return (
     <nav className="nav">
       <Logo />
       <NavbarMenu />
-      <NavbarUsuario />
+      <NavbarUsuario totalItems={totalItems} />
     </nav>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import "./UsuarioDatos.css";
 
-const UsuarioDatos = () => {
+const UsuarioDatos = ({ name, email }) => {
   return (
     <div className="user__credent">
-      <h4>Usuario</h4>
-      <p>Correo</p>
+      <h4>{name}</h4>
+      <p>{email}</p>
     </div>
   );
 };

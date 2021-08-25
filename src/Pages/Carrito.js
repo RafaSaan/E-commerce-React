@@ -4,7 +4,6 @@ import CartProducts from "../Components/Cart/CartProducts";
 const Carrito = () => {
   return (
     <div>
-      <h2>Carrito</h2>
       <CartProducts />
     </div>
   );

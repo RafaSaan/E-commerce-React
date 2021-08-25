@@ -5,6 +5,15 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.cart-count {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+.cart-count > p {
+  font-size: 2.2rem;
+  color: #000;
+}
 .user-icon,
 .cart-icon {
   font-size: 3.2rem;
