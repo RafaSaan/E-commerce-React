@@ -27,7 +27,7 @@ const PagoForm = ({ next }) => {
           required
         />
 
-        <label htmlFor="">Calle y No°*</label>
+        <label htmlFor="">Calle y N°*</label>
         <input
           type="text"
           className="pago__input"

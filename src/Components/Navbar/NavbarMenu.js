@@ -23,7 +23,7 @@ const NavbarMenu = () => {
           className="nav__link"
           activeClassName="nav-active"
         >
-          Tieda
+          Tienda
         </NavLink>{" "}
       </li>
       <li className="nav__item">
