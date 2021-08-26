@@ -7,6 +7,7 @@ import Contacto from "./Pages/Contacto";
 import Inicio from "./Pages/Inicio";
 import Tienda from "./Pages/Tienda";
 import Usuario from "./Pages/Usuario";
+import Pago from "./Pages/Pago";
 import { commerce } from "./lib/commerce";
 
 function App() {
@@ -21,9 +22,21 @@ function App() {
     setCart(await commerce().cart.retrieve());
   };
   const handleAddToCart = async (productId, quantity) => {
-    const item = await commerce().cart.add(productId, quantity);
+    const { cart } = await commerce().cart.add(productId, quantity);
 
-    setCart(item.cart);
+    setCart(cart);
+  };
+
+  const handleUpdateCartQty = async (lineItemId, quantity) => {
+    const { cart } = await commerce().cart.update(lineItemId, { quantity });
+
+    setCart(cart);
+  };
+
+  const handleRemoveFromCart = async lineItemId => {
+    const { cart } = await commerce().cart.remove(lineItemId);
+
+    setCart(cart);
   };
 
   useEffect(() => {
@@ -51,7 +64,14 @@ function App() {
             <Usuario />
           </Route>
           <Route exact path="/carrito">
-            <Carrito />
+            <Carrito
+              items={cart}
+              onUpdateCartQty={handleUpdateCartQty}
+              onRemoveFromCart={handleRemoveFromCart}
+            />
+          </Route>
+          <Route exact path="/pago">
+            <Pago items={cart} />
           </Route>
         </Switch>
       </Router>

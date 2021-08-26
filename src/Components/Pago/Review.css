@@ -1,0 +1,16 @@
+.review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review > p {
+  font-size: 1.5rem;
+}
+.name {
+  width: 11.5rem;
+}
+.totl {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+}

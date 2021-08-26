@@ -7,9 +7,13 @@
 }
 .cart-img {
   width: 7rem;
+  height: 7rem;
 }
 .card__item__sec {
   font-size: 1.4rem;
+}
+.item-title {
+  width: 9rem;
 }
 .item-cont {
   display: flex;
@@ -25,4 +29,6 @@
 .cont {
   font-size: 2rem;
   margin: 0 0.5rem;
+  width: 2rem;
+  text-align: center;
 }

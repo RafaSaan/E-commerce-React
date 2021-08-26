@@ -1,10 +1,14 @@
 import React from "react";
 import CartProducts from "../Components/Cart/CartProducts";
 
-const Carrito = () => {
+const Carrito = ({ items, onUpdateCartQty, onRemoveFromCart }) => {
   return (
     <div>
-      <CartProducts />
+      <CartProducts
+        items={items}
+        onRemoveFromCart={onRemoveFromCart}
+        onUpdateCartQty={onUpdateCartQty}
+      />
     </div>
   );
 };

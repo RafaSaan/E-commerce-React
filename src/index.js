@@ -8,7 +8,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="dev-yzi3pcao.us.auth0.com"
     clientId="fUUnXHNgP1skfhNWc7vlE3FHybgHjRPI"
-    redirectUri="http://localhost:3000/usuario"
+    redirectUri="https://mia-san.netlify.app/usuario"
   >
     <App />
   </Auth0Provider>,

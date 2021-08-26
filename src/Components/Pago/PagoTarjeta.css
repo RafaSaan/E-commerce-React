@@ -1,0 +1,24 @@
+.input__date {
+  /* width: 2.5rem; */
+  height: 2.8rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+}
+.input__cvv {
+  font-size: 1.4rem;
+  width: 6rem;
+  height: 2.8rem;
+}
+.input__tarjeta {
+  width: 18rem;
+  height: 2.8rem;
+  font-size: 1.4rem;
+}
+.pago__tarjeta {
+  display: flex;
+  flex-direction: column;
+}
+.pago__tarjeta__title {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
